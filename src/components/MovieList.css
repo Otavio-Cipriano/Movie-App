@@ -1,0 +1,29 @@
+
+.movielist-container {
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .movielist-container h3 {
+    /* margin-left   : 25px; */
+    text-transform: capitalize;
+  }
+  
+  .movielist {
+    display        : flex;
+    flex-wrap      : wrap;
+    list-style     : none;
+    margin-block   : 0;
+    justify-content: center;
+    padding        : 10px 0 0 0;
+    min-height     : 70vh;
+    text-align: center;
+  }
+
+  .top-bar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 35px;
+  }

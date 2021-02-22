@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141E30;
+  color           : white;
+}
+
+.app {
+  text-align      : center;
+  width           : 100%;
+  max-width       : 1200px;
+  height          : 100%;
+  min-height      : 100vh;
+  margin          : auto;
+  background-color: #141E30;
+  box-sizing      : border-box;
+}
+
+
+
+.spinner {
+  position     : absolute;
+  left         : 50%;
+  display      : block;
+  top          : 50%;
+  border       : 5px solid #f3f3f3;
+  border-radius: 50%;
+  width        : 20px;
+  height       : 20px;
+  border-top   : 5px solid yellow;
+  animation    : spin 2s linear infinite;
+  margin       : 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

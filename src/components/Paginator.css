@@ -1,0 +1,8 @@
+.paginator {
+    /* margin    : 10px; */
+    text-align: center;
+  }
+  
+  .paginator span {
+    margin: 10px;
+  }

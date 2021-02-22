@@ -1,0 +1,123 @@
+.overlay {
+  width           : 100%;
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  display         : grid;
+  justify-content : center;
+  align-content   : center;
+}
+
+
+.modal {
+  margin: 10vh auto;
+  transition: 0.4s ease;
+  width: 80%;
+  max-width: 1020px;
+  max-height          : 85vh;
+}
+
+@media(max-width: 500px){
+  .modal{
+    margin: 0;
+    width: 100%;
+  }
+  .modal-content{
+    flex-direction: column;
+  }
+  .close-button{
+    left: -5px !important;
+    top: -50px !important;
+  }
+  .modal .sidebar{
+    width: 100% !important;
+  }
+  .modal .main{
+    width: 100% !important;
+  }
+}
+
+.modal-content{
+  position: relative;
+  width: 100%;
+  background-color: #141E30;
+  display         : flex;
+  text-align: left;
+  border: 1px solid white;
+}
+
+.close-button{
+  position: absolute;
+  top: -55px;
+  left: -24px;
+  font-size: 90px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  text-align: center;
+  text-shadow: 0 1px white, 0 -1px white, 0 2px white, 0 -2px white;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  cursor: pointer;
+}
+
+.close-button:hover{
+  text-shadow: 0 1px #a5a5a5, 0 -1px #a5a5a5, 0 2px #a5a5a5, 0 -2px #a5a5a5;
+  color: #a5a5a5;
+  transform: translateX(-5px);
+  cursor: pointer;
+}
+
+.modal .sidebar {
+  width: 35%;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #2d4775;
+}
+
+.sidebar .image-container {
+  width     : 100%;
+  /* border-bottom: 2px solid white; */
+  padding: 15px;
+  max-width: 300px;
+  display: flex;
+  margin: auto;
+} 
+
+.movie-details{
+  padding: 15px 20px;
+  border-top: 1px solid white;
+}
+
+img {
+  height    : 100%;
+  width     : 100%;
+  box-sizing: border-box;
+}
+
+.sidebar p{
+  margin: 10px 0;
+}
+
+.main{
+  width: 65%;
+}
+
+.main h3, .main p{
+  padding: 10px 20px;
+}
+
+.main h3{
+  border-bottom: 1px solid white;
+  font-size: 25px;
+}
+
+.modal-not-open{
+  transform: translateX(-100px);
+}
+
+.modal-open{
+  transform: translateX(0);
+}
